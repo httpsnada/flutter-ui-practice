@@ -29,15 +29,15 @@ A small Flutter UI project created to practice:
 
 ### Onboarding - Light mode
 
-<img src="screenshots/onboarding1_light.png" width="1500"/> <img src="screenshots/onboarding2_light.png" width="1500"/> <img src="screenshots/onboarding3_light.png" width="1500"/>
+<img src="screenshots/onboarding1_light.png" width="250"/> <img src="screenshots/onboarding2_light.png" width="250"/> <img src="screenshots/onboarding3_light.png" width="250"/>
 
 ### Onboarding - Dark mode
 
-<img src="screenshots/onboarding1_dark.png" width="1500"/> <img src="screenshots/onboarding2_dark.png" width="1500"/> <img src="screenshots/onboarding3_dark.png" width="1500"/>
+<img src="screenshots/onboarding1_dark.png" width="250"/> <img src="screenshots/onboarding2_dark.png" width="250"/> <img src="screenshots/onboarding3_dark.png" width="250"/>
 
 ### Authentication
 
-<img src="screenshots/login_light.png" width="1500"/> <img src="screenshots/login_dark.png" width="1500"/>
+<img src="screenshots/login_light.png" width="250"/> <img src="screenshots/login_dark.png" width="250"/>
 
 ---
 
