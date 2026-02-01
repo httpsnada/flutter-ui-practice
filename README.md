@@ -69,7 +69,9 @@ lib/
 ├── shared/
 │   └── widgets/
 │
-├── app.dart
+├── app/
+│   └──theme_notifier.dart
+
 └── main.dart
 ```
 

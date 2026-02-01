@@ -10,7 +10,9 @@ class AppStrings {
 
   static const onboardingTitle3 = 'Compare Stocks';
   static const onboardingSubtitle3 =
-      'Compare your stocks easily with the help of the free buil-in compare feature in the app.';
+      'Compare your stocks easily with the help of the free built-in compare feature in the app.';
+
+  static const onboardingButton = 'Get Started';
 
   // Auth
   static const loginTitle = 'Welcome Back!';

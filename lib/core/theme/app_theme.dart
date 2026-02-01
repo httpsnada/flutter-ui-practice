@@ -7,10 +7,10 @@ import 'app_text_styles.dart';
 class AppTheme {
   static ThemeData lightTheme = ThemeData(
     colorScheme: colorSchemeLight,
-    scaffoldBackgroundColor: colorSchemeLight.background,
+    scaffoldBackgroundColor: AppColors.backgroundLight,
 
-    elevatedButtonTheme: ElevatedButtonThemeData(
-      style: ElevatedButton.styleFrom(
+    filledButtonTheme: FilledButtonThemeData(
+      style: FilledButton.styleFrom(
         padding: EdgeInsets.symmetric(vertical: 16),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         textStyle: TextStyle(
@@ -28,7 +28,7 @@ class AppTheme {
       hintStyle: TextStyle(
         fontSize: 16,
         fontWeight: FontWeight.w400,
-        color: AppColors.textSecondary,
+        color: colorSchemeLight.onSurfaceVariant,
         fontFamily: GoogleFonts.roboto().fontFamily,
       ),
       contentPadding: EdgeInsets.all(16),
@@ -53,19 +53,21 @@ class AppTheme {
 
     textTheme: TextTheme(
       titleLarge: AppTextStyle.titleLarge.copyWith(
-        color: colorSchemeLight.onBackground,
+        color: colorSchemeLight.onSurface,
       ),
-      bodyMedium: AppTextStyle.body.copyWith(color: AppColors.textSecondary),
-      bodySmall: AppTextStyle.caption.copyWith(color: AppColors.textSecondary),
+      bodyMedium: AppTextStyle.body.copyWith(
+          color: colorSchemeLight.onSurfaceVariant),
+      bodySmall: AppTextStyle.caption.copyWith(
+          color: colorSchemeLight.onSurfaceVariant),
     ),
   );
 
   static ThemeData darkTheme = ThemeData(
     colorScheme: colorSchemeDark,
-    scaffoldBackgroundColor: colorSchemeDark.background,
+    scaffoldBackgroundColor: AppColors.backgroundDark,
 
-    elevatedButtonTheme: ElevatedButtonThemeData(
-      style: ElevatedButton.styleFrom(
+    filledButtonTheme: FilledButtonThemeData(
+      style: FilledButton.styleFrom(
         padding: EdgeInsets.symmetric(vertical: 16),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         textStyle: TextStyle(
@@ -83,7 +85,7 @@ class AppTheme {
       hintStyle: TextStyle(
         fontSize: 16,
         fontWeight: FontWeight.w400,
-        color: AppColors.textSecondary,
+        color: colorSchemeDark.onSurfaceVariant,
         fontFamily: GoogleFonts.roboto().fontFamily,
       ),
       contentPadding: EdgeInsets.all(16),
@@ -108,10 +110,12 @@ class AppTheme {
 
     textTheme: TextTheme(
       titleLarge: AppTextStyle.titleLarge.copyWith(
-        color: colorSchemeDark.onBackground,
+        color: colorSchemeDark.onSurface,
       ),
-      bodyMedium: AppTextStyle.body.copyWith(color: AppColors.textSecondary),
-      bodySmall: AppTextStyle.caption.copyWith(color: AppColors.textSecondary),
+      bodyMedium: AppTextStyle.body.copyWith(
+          color: colorSchemeDark.onSurfaceVariant),
+      bodySmall: AppTextStyle.caption.copyWith(
+          color: colorSchemeDark.onSurfaceVariant),
     ),
   );
 }
@@ -119,23 +123,19 @@ class AppTheme {
 final colorSchemeLight = ColorScheme.light(
   primary: AppColors.primary,
   secondary: AppColors.secondary,
-  background: AppColors.backgroundLight,
   error: AppColors.error,
   surface: AppColors.surfaceLight,
   onPrimary: AppColors.backgroundLight,
   onSurface: AppColors.textPrimaryLight,
-  onBackground: AppColors.textPrimaryLight,
-  onError: AppColors.error,
+  onSurfaceVariant: AppColors.textSecondary,
 );
 
 final colorSchemeDark = ColorScheme.dark(
   primary: AppColors.primary,
   secondary: AppColors.secondary,
-  background: AppColors.backgroundDark,
   error: AppColors.error,
   surface: AppColors.surfaceDark,
   onPrimary: AppColors.backgroundLight,
   onSurface: AppColors.textPrimaryDark,
-  onBackground: AppColors.textPrimaryDark,
-  onError: AppColors.error,
+  onSurfaceVariant: AppColors.textSecondary,
 );

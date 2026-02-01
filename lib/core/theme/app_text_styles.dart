@@ -3,8 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 class AppTextStyle {
   static final TextStyle titleLarge = TextStyle(
-    fontSize: 20,
-    fontWeight: FontWeight.bold,
+    fontSize: 24,
+    fontWeight: FontWeight.w900,
     fontFamily: GoogleFonts.roboto().fontFamily,
   );
 
