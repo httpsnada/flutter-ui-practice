@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:onboarding/core/constants/app_assets.dart';
+import 'package:onboarding/features/auth/screens/login_screen.dart';
 import 'package:onboarding/features/onboarding/screens/onboarding_layout.dart';
 import 'package:onboarding/features/onboarding/widgets/onboarding_button.dart';
 import 'package:onboarding/features/onboarding/widgets/onboarding_indicators.dart';
@@ -94,7 +95,10 @@ class _OnboardingScreensState extends State<OnboardingScreens> {
                       );
                     },
                     onFinish: () {
-                      // navigate to login
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => LoginScreen()),
+                      );
                     },
                   ),
                 ],

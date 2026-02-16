@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:onboarding/core/constants/app_assets.dart';
+import 'package:onboarding/core/utils/extensions.dart';
 import 'package:onboarding/core/utils/spacing.dart';
 import 'package:onboarding/features/onboarding/widgets/theme_drop_down.dart';
 
@@ -8,9 +9,8 @@ class OnboardingHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Brightness brightness = Theme.of(context).brightness;
-    bool isDarkMode = brightness == Brightness.dark;
-    String logoAsset = isDarkMode ? AppImages.logoDark : AppImages.logoLight;
+    String logoAsset = context.isDarkMode ? AppImages.logoDark : AppImages
+        .logoLight;
 
     return Padding(
       padding: EdgeInsets.only(

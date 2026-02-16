@@ -16,7 +16,7 @@ class AppTextStyle {
   );
 
   static final TextStyle caption = TextStyle(
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: FontWeight.w400,
     fontFamily: GoogleFonts.roboto().fontFamily,
   );

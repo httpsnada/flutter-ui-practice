@@ -24,7 +24,8 @@ class AppTheme {
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
       fillColor: colorSchemeLight.surface,
-      border: OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
+      border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none),
       hintStyle: TextStyle(
         fontSize: 16,
         fontWeight: FontWeight.w400,
@@ -81,7 +82,8 @@ class AppTheme {
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
       fillColor: colorSchemeDark.surface,
-      border: OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
+      border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none),
       hintStyle: TextStyle(
         fontSize: 16,
         fontWeight: FontWeight.w400,
