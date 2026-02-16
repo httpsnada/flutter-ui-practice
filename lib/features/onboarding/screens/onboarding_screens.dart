@@ -95,7 +95,7 @@ class _OnboardingScreensState extends State<OnboardingScreens> {
                       );
                     },
                     onFinish: () {
-                      Navigator.push(
+                      Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(builder: (context) => LoginScreen()),
                       );
